@@ -1,0 +1,14 @@
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/bin/Debug/net10.0/PrimeiroProjeto
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/bin/Debug/net10.0/PrimeiroProjeto.deps.json
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/bin/Debug/net10.0/PrimeiroProjeto.runtimeconfig.json
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/bin/Debug/net10.0/PrimeiroProjeto.dll
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/bin/Debug/net10.0/PrimeiroProjeto.pdb
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/obj/Debug/net10.0/PrimeiroProjeto.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/obj/Debug/net10.0/PrimeiroProjeto.AssemblyInfoInputs.cache
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/obj/Debug/net10.0/PrimeiroProjeto.AssemblyInfo.cs
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/obj/Debug/net10.0/PrimeiroProjeto.csproj.CoreCompileInputs.cache
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/obj/Debug/net10.0/PrimeiroProjeto.dll
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/obj/Debug/net10.0/refint/PrimeiroProjeto.dll
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/obj/Debug/net10.0/PrimeiroProjeto.pdb
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/obj/Debug/net10.0/PrimeiroProjeto.genruntimeconfig.cache
+/Users/gustavoheiden/Documents/testeC#/PrimeiroProjeto/obj/Debug/net10.0/ref/PrimeiroProjeto.dll
