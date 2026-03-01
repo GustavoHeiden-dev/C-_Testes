@@ -1,38 +1,21 @@
-﻿// Console.WriteLine("Escreva um numero:");
-// String num = Console.ReadLine();
-// int num1 = int.Parse(num);
+﻿using System.Collections.Specialized;
 
-// if(num1 % 2 == 0 ){
-//         Console.WriteLine($"seu numero é par" );
-// }else{Console.Write("Seu numero é impar");}
+int[] vetor = new int[5];  
 
-
-System.Console.WriteLine("escreva um numero:");
-String num1 = Console.ReadLine();
-
-System.Console.WriteLine("escreva qual operaçao voce quer: ");
-String op = Console.ReadLine();
-System.Console.WriteLine("Escreva um segundo numero: ");
-String num2 = Console.ReadLine();
-int numeroConver = int.Parse(num1);
-int numeroConver2 = int.Parse(num2);
-
-switch (op)
+for(int i = 0 ; i< vetor.Length ; i++)
 {
-    case "+" : 
-    System.Console.WriteLine($"sua soma é {numeroConver + numeroConver2}"); 
-    break;
-    case "-":
-    System.Console.WriteLine($"sua subtraçao é: {numeroConver - numeroConver2}"); 
-    break;
-    case "*": 
-    System.Console.WriteLine($"sua multiplicaçao é: {numeroConver * numeroConver2}");
-    break;
-    case "/":
-     System.Console.WriteLine($"sua divisão é: {numeroConver / numeroConver2}");
-    break;
-    default:
-    System.Console.WriteLine("operaçao invalida");
-    break;
+    System.Console.WriteLine("escreva um numero para colocar na posiçao: "+i);
+    String s = Console.ReadLine();
+    int n = int.Parse(s);
+    vetor[i] =  n;
 }
-
+System.Console.WriteLine("seu array de menor para maior:  ");
+Array.Sort(vetor);
+foreach( int v in vetor){
+    System.Console.WriteLine(v);
+}
+System.Console.WriteLine("\nde maior para menor: ");
+Array.Reverse(vetor);
+foreach( int v in vetor){
+    System.Console.WriteLine(v);
+}
