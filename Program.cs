@@ -9,13 +9,39 @@ for(int i = 0 ; i< vetor.Length ; i++)
     int n = int.Parse(s);
     vetor[i] =  n;
 }
-System.Console.WriteLine("seu array de menor para maior:  ");
-Array.Sort(vetor);
-foreach( int v in vetor){
-    System.Console.WriteLine(v);
+MenorParaMaior();
+MaiorParaMenor();
+
+
+void MenorParaMaior()
+{
+    //swap
+    for(int i=0; i < vetor.Length - 1 ; i++)
+    {
+        for(int j=0; j<vetor.Length - 1 ; j++)
+        {
+            if(vetor[j] > vetor[j + 1])
+            {
+                int a = vetor[j];
+                vetor[j] = vetor[j + 1];
+                vetor[j + 1 ] = a;
+            }
+        }
+    }
+    System.Console.WriteLine("de menor para maior: ");
+    foreach(int v in vetor)
+    {
+        System.Console.WriteLine(v);
+    }
+    
 }
-System.Console.WriteLine("\nde maior para menor: ");
+
+void MaiorParaMenor()
+{
+    System.Console.WriteLine("\nde maior para menor: ");
 Array.Reverse(vetor);
 foreach( int v in vetor){
     System.Console.WriteLine(v);
+}   
+    
 }
