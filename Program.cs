@@ -24,7 +24,8 @@ namespace PrimeiroProjeto
 1 - Adicionar Produto
 2 - Listar Produtos
 3 - Filtrar Produto
-4 - Sair
+4 - Deletar Produto
+5 - Sair
                 ");
                 int escolha = int.Parse(Console.ReadLine());
                 switch (escolha)
@@ -40,7 +41,10 @@ namespace PrimeiroProjeto
                         service.FiltrarProduto();
                         break;
                     case 4:
-                        System.Console.WriteLine("Saindo...");
+                        service.DeletarProduto();
+                        break;
+                    case 5:
+                         System.Console.WriteLine("Saindo...");
                         rodar = false;
                         break;
                     default:

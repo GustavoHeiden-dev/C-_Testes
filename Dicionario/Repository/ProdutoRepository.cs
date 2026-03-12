@@ -53,12 +53,28 @@ namespace PrimeiroProjeto.Dicionario.Repository
             var cmd = new MySqlCommand(sql,conn);
             cmd.Parameters.AddWithValue("@nome", $"%{nome}%");
             var reader = cmd.ExecuteReader();
+            bool encontrou = false;
             while (reader.Read())
             {
                 System.Console.WriteLine($"Nome: {reader["nome"]} / Preco{reader["preco"]}");
+                encontrou =true;
+            }
+            if (!encontrou)
+            {
+                System.Console.WriteLine("produto nao encontrado!");
             }
         }
-        
+        public void DeletarProd(int id)
+        {
+            using var conn = conexao.Conectar();
+            conn.Open();
+            string sql = "DELETE FROM produtos WHERE id = @id";
+            var cmd = new MySqlCommand(sql,conn);
+            cmd.Parameters.AddWithValue("@id",id );
+            cmd.ExecuteNonQuery();
+           
+
+        }
         
     }
 }
