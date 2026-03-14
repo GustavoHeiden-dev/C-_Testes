@@ -15,9 +15,21 @@ namespace PrimeiroProjeto
     {
         static void Main(string[] args)
         {
-            ProdutoRepository repo = new ProdutoRepository();
+            UserService service1 = new UserService();
             ProdutoService service = new ProdutoService();
-            Boolean rodar = true;
+
+            Users usuario = service1.Login();
+            if(usuario == null)
+            {
+                Console.WriteLine("usuario nao encontrado");
+                return;
+            }
+            else if (usuario.Cargo.ToLower() == "admin")
+            {
+                Console.WriteLine("Login como ADMIN");
+                 Boolean rodar = true;
+            
+            
             while (rodar)
             {
                 System.Console.WriteLine(@"digite o numero para oq voce quer:
@@ -25,7 +37,8 @@ namespace PrimeiroProjeto
 2 - Listar Produtos
 3 - Filtrar Produto
 4 - Deletar Produto
-5 - Sair
+5 - Adicionar Usuario
+6 - Sair
                 ");
                 int escolha = int.Parse(Console.ReadLine());
                 switch (escolha)
@@ -44,7 +57,10 @@ namespace PrimeiroProjeto
                         service.DeletarProduto();
                         break;
                     case 5:
-                         System.Console.WriteLine("Saindo...");
+                        service1.AdicionarUsuario();
+                        break;
+                    case 6:
+                        System.Console.WriteLine("Saindo...");
                         rodar = false;
                         break;
                     default:
@@ -53,6 +69,13 @@ namespace PrimeiroProjeto
 
                 }
             }
+            }
+            else
+            {
+                System.Console.WriteLine($"Usuario {usuario.Nome} nao tem permisao");
+            }
+
+           
         }
     }
 }

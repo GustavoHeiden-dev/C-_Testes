@@ -7,8 +7,9 @@ namespace PrimeiroProjeto.Dicionario.Model
 {
     public class Users
     {
-        string nome {get; set;}
-        string cargo {get;set;}
+        public int id {get;set;}
+        public string Nome {get; set;} = "";
+        public string Cargo {get;set;} = "";
         
     }
 }
